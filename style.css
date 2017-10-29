@@ -1,124 +1,89 @@
- /*
-
-body{
-  box-sizing: border-box;
-  background-color: #C6D8D6;
-  margin: 0;
-  padding: 0;
-  font-family: arial;
-}
-
-main{
-  width:80%;
-  margin:auto;
-}
-
-/*nav{
-  position:fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-h1, h2{
-  color: #fff;
-  text-align: center;
-  margin: 0;
-}
-h1{
-  font-size: 6em;
-  border-bottom: solid white;
-  margin-bottom: 5px;
-
-}
-
-#welcome {
-  padding-top: 20%;
-  border: none;
-}
-
-.frontpage{
-  background-image: url('titleimage.jpg');
-  max-width: 100vw;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-
-
-
-}
-header{
-  background-color: #798887;
-}
-nav{
-  float: right;
-}
-ul{
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  padding: 10px 0 10px 0;
-}
-.company{
-  float: left;
-  padding: 10px 0 10px 5%;
-}
-
-li{
-  display: inline;
-  padding: 0 5% 0 5%;
-}
-
-nav a{
-  text-decoration: none;
-  color: inherit;
-}
-
-nav a:hover {
-  color: #aaaa9e;
-}
-
-img{
-  width: 100%;
-  vertical-align: middle;
-}
-.service{
-  float: left;
-  width: 32%;
-  background-color: #798887;
-  margin: 4px;
-  text-align: center;
-}
-footer{
-  background-color: #798887;
-} */
 /* global */
+*{
+  font-family: verdana;
+}
+
 body{
-  font-style: Arial;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.container{
-  width: 80%;
-  margin: auto;
-  overflow:hidden;
 }
 
 ul{
   margin:0;
   padding:0;
 }
+
+span{
+  color: #5DBCD2;
+}
+
+button{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #e27d60;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #5DBCD2;
+}
+
+section, aside{
+  background-color: #D6E5E3;
+  /*margin: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;*/
+}
+
+section div, aside div{
+  width: 95%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input{
+  height: 34px;
+  width: 200px;
+  margin-right: 5px;
+}
+
+main h1{
+  color: #5DBCD2;
+  font-size: 3em;
+  text-align: center;
+  /*border-bottom: #5DBCD2 3px solid;*/
+}
+
+main{
+  width: 80%;
+  margin: auto;
+}
+
+footer{
+  text-align: center;
+  background-color: #5DBCD2;
+  padding: 10px;
+  clear: both;
+}
+
 /* header */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
 header{
-  background:#4a7dce;
+  background:#e27d60;
   color:#ffffff;
   padding-top:15px;
   min-height:70px;
-  border-bottom: #fff 10px solid;
-  border-color: #fff;
+  border-bottom: #5DBCD2 10px solid;
 }
 
 header a{
@@ -149,26 +114,43 @@ header nav{
 }
 
 header a:hover{
-  color:#aaaa9e;
-}
-/* main */
-#welcome {
-  padding-top: 20%;
-  border: none;
+  color:#5DBCD2;
 }
 
-.frontpage h1{
+label{
+  margin: 0 40px 0 0;
+  font-size: 50px;
+  display: none;
+  /*float: right;*/
+}
+
+#toggle{
+  display: none;
+}
+/* index.html */
+#welcome {
+  padding-top: 10%;
+  border: none;
   color: #fff;
   font-size: 6em;
   margin-top: 0;
 }
 
 .frontpage{
-  background-image: url('titleimage.jpg');
-  max-width: 100vw;
+  background-image: url('titleimage.jpg');/* source: https://www.flickr.com/photos/hkase/9997095645/in/photolist-gepJf2-aqXBdH-8XGDKR-owVkdM-aQEhqt-fPoM4G-5rjoU-97uBZ7-4qfFXo-aqXARD-85Cihv-uYQ9N-dk1kF7-ZvCpX8-c2Qzeo-7Xdggt-JWEQ-ZsQrVG-njVWkm-7xfjz1-ZrpGJ9-jQGjjt-bW8LCf-UCZ63T-egxRTd-ZL6ayk-6Q6dg9-8tkTfR-a9mSXv-bpyqAp-pKqKKB-DeyeNT-pbNEGz-4WHNSC-b5nAkp-7bzcBv-4fMoF8-YFqiXs-6j8y5z-cHLp5J-d9gFPG-7WRCUo-6eJjmt-dnhMUx-7K1Evp-jQHaxM-96DW6n-BMtj5G-eeDEiJ-BMtdKU
+  Author: hkase(https://www.flickr.com/photos/hkase/)
+  License: https://creativecommons.org/licenses/by/2.0/ */
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  padding-bottom: 100px;
   text-align: center;
+  background-position: center;
+}
+
+.frontpage h2{
+  margin-bottom: 0;
+  color: #ffffff;
+  border: none;
 }
 
 .home{
@@ -177,105 +159,277 @@ header a:hover{
 }
 
 .offers{
-  background-color:#4a7dce;
+  background-color:#5DBCD2;
   padding: 20px;
   text-align: center;
   color: #ffffff;
 }
-input{
-  height: 34px;
-  width: 200px;
-  margin-right: 5px;
 
+.background{
+  background-color: #D6E5E3;
 }
-.email{
-  height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
 
 .promotion{
   float: left;
   width: 50%;
   text-align: center;
+  padding-bottom: 5px;
+  background-color: #D6E5E3;
+}
 
+.promotion img{
+    padding-top: 10px;
+    max-width: 60%;
 }
-/* other pages */
-main h1{
-  color: #4a7dce;
-  font-size: 3em;
-  text-align: center;
-  border-bottom: #4a7dce 3px solid;
-}
-main{
-  width: 80%;
-  margin: auto;
 
-}
+/* services.html */
+
 .service{
   float: left;
   width: 32%;
-  background-color: #4a7dce;
-  margin: 4px;
+  background-color: #D6E5E3;
+  padding-bottom: 5px;
+  margin: 6px;
+  margin-bottom: 16px;
   text-align: center;
 }
+
 .service img{
   width: 100%;
   vertical-align: middle;
 }
 
+/*About Us*/
+.team img{
+  width: 100%;
+}
+
 .about{
   float: left;
-  width: 66%;
+  width: 64%;
+}
+
+.about h1{
+  margin-top: 5px;
 }
 
 .what_we_do{
   float: right;
-  width: 33%;
-  margin-top: 40px;
+  width: 30%;
 }
 
-.what_we_do h2{
-  border-bottom: #4a7dce 3px solid;
+.what_we_do, .about{
+  margin-top: 10px;
+}
+.what_we_do h2, .meet h2{
+  /*border-bottom: #5DBCD2 3px solid;*/
   text-align: center;
-  color: #4a7dce;
+  color: #5DBCD2;
 }
 
 .meet{
   clear: both;
   text-align: center;
+  /*background-color: #D6E5E3;*/
 }
 
 .team{
   float: left;
-  width: 33%;
+  width: 32%;
+  margin: 6px;
+  padding-bottom: 5px;
+  background-color: #D6E5E3;
 }
 
+/* ContactUs.html*/
 .inquiries{
   float: left;
-  width: 60%;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-.inquiries input{
+.inquiries input , .inquiries textarea{
   display: block;
-  width: 60%;
-  margin-bottom: 5px;
+  width: 80%;
+  margin-bottom: 4px;
 }
-/* this is where you are*/
-input .message{
-  height: 300px:
+
+.send{
+  float: right;
+  width: 20%;
+  margin-right: 19%;
 }
+
+/*textarea{
+  border-width: 2px;
+  border-style: inset;
+} */
 
 .info{
   float:right;
   width: 40%;
 }
 
-footer{
-  text-align: center;
-  background-color: #4a7dce;
-  padding: 10px;
-  clear: left;
+/* Media Queries*/
+@media(max-width: 1167px) {
+  header .company, header nav{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+
+  header{
+    padding-bottom: 15px;
+  }
+
+  main{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media(max-width: 1110px){
+  .about, .what_we_do{
+    float: none;
+    width: 100%;
+  }
+}
+
+@media(max-width: 999px){
+  .promotion{
+    float: none;
+    width: 100%;
+  }
+  .promotion img{
+    max-width: 300px;
+  }
+  .promotion p{
+    margin-bottom: 0;
+  }
+  .team{
+    width: 31%;
+  }
+  .service{
+    width:48%;
+  }
+  #welcome{
+    font-size: 4em;
+  }
+}
+@media(max-width: 770px){
+  .inquiries, .info{
+    float: none;
+    width: 100%;
+  }
+  .inquiries input, .inquiries textarea{
+    width: 95%;
+  }
+  .info{
+    text-align: center;
+  }
+  .inquiries{
+    padding-bottom: 50px;
+  }
+  .info{
+    margin-bottom: 10px;
+  }
+  .send{
+    margin-right: 5%;
+  }
+  #welcome{
+    font-size: 4em;
+  }
+}
+@media(max-width: 666px){
+  .service{
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .team{
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  main{
+    width:100%;
+  }
+  section.about{
+    margin-top: 0;
+  }
+  #welcome{
+    font-size: 3em;
+  }
+}
+@media(max-width: 630px){
+
+  label{
+    display: block;
+    cursor: pointer;
+  }
+  ul{
+    text-align: left;
+    width: 100%;
+    display: none;
+  }
+  ul li{
+    display: block;
+
+  }
+  #toggle:checked + ul {
+    display: block;
+
+  }
+  header .company{
+    float: right;
+    display: block;
+    width:60%;
+    padding: 0;
+  }
+  header nav{
+    float: left;
+    width: 40%;
+    margin: 0;
+  }
+  header .company h1{
+    font-size: 2em;
+    margin-top: 17px;
+  }
+  nav ul li{
+    padding: 0;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  main {
+    margin-top: 110px;
+  }
+  .home{
+    margin-top: 110px;
+  }
+}
+@media(max-width: 398px){
+  header nav{
+    margin-top: 10px;
+  }
+  main{
+    margin-top: 130px;
+  }
+  #welcome{
+    font-size: 2em;
+    padding-top: 20%;
+  }
+  .frontpage h2{
+    font-size: 1em;
+  }
 }
